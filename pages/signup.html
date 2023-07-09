@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration - Digital Recruitment Solution</title>
+  <link rel="stylesheet" type="text/css" href="../css/signup.css">
+</head>
+<body>
+  <header>
+    <!-- Logo and navigation menu -->
+    <img src="../assets/Logo.png" class="logo"/>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./login.html" class="sign-up">Log In</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="registration-container">
+    <h1>Company Registration</h1>
+    <form action="./login.html" method="POST">
+      <input type="text" placeholder="Company Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+      <button type="submit" id="sign-up-button">Register</button>
+    </form>
+    <p>Already have an account? <a href="./login.html">Log In</a></p>
+  </div>
+  <script>
+    document.getElementById("sign-up-button").addEventListener("click", function() {
+      event.preventDefault();
+      window.location.href = "login.html";
+    });
+  </script>
+</body>
+</html>
+
